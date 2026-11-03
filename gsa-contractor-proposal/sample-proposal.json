@@ -1,0 +1,53 @@
+{
+  "proposal": "Illustrative CONUS proposal travel",
+  "scenarios": [
+    {
+      "id": "washington-site-visit",
+      "travelers": 3,
+      "trip": {
+        "stops": [
+          {
+            "location": {
+              "destination_id": 75
+            },
+            "arrival_date": "2026-11-09",
+            "departure_date": "2026-11-12",
+            "lodging_cost_per_night": 200
+          }
+        ],
+        "deductible_meals": [
+          {
+            "date": "2026-11-10",
+            "meals": [
+              "lunch"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "washington-san-diego-review",
+      "travelers": 2,
+      "trip": {
+        "stops": [
+          {
+            "location": {
+              "destination_id": 75
+            },
+            "arrival_date": "2026-11-16",
+            "departure_date": "2026-11-18",
+            "lodging_cost_per_night": 200
+          },
+          {
+            "location": {
+              "destination_id": 34
+            },
+            "arrival_date": "2026-11-18",
+            "departure_date": "2026-11-20",
+            "lodging_cost_per_night": 180
+          }
+        ]
+      }
+    }
+  ]
+}

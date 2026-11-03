@@ -1,0 +1,2 @@
+scenario_id,travelers,status,start_date,end_date,days,nights,per_traveler_lodging_payable,group_lodging_payable,per_traveler_mie_payable,group_mie_payable,per_traveler_total_payable,group_total_payable,per_traveler_lodging_overage,group_lodging_overage
+san-diego-caps-only,2,incomplete,2026-11-09,2026-11-12,4,3,,,301.00,602.00,,,,

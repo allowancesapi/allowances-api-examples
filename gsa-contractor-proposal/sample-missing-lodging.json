@@ -1,0 +1,20 @@
+{
+  "proposal": "Illustrative missing lodging scenario",
+  "scenarios": [
+    {
+      "id": "san-diego-caps-only",
+      "travelers": 2,
+      "trip": {
+        "stops": [
+          {
+            "location": {
+              "destination_id": 34
+            },
+            "arrival_date": "2026-11-09",
+            "departure_date": "2026-11-12"
+          }
+        ]
+      }
+    }
+  ]
+}

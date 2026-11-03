@@ -1,0 +1,433 @@
+{
+  "proposal": "Illustrative CONUS proposal travel",
+  "endpoint": "http://127.0.0.1:32768/v1/gsa/calc/perdiem/trip",
+  "status": "complete",
+  "scenarios": [
+    {
+      "scenario_id": "washington-site-visit",
+      "travelers": 3,
+      "request": {
+        "stops": [
+          {
+            "location": {
+              "destination_id": 75
+            },
+            "arrival_date": "2026-11-09",
+            "departure_date": "2026-11-12",
+            "lodging_cost_per_night": 200
+          }
+        ],
+        "deductible_meals": [
+          {
+            "date": "2026-11-10",
+            "meals": [
+              "lunch"
+            ]
+          }
+        ],
+        "verification_url": true
+      },
+      "requested_at": "2026-11-03T07:23:39.098573+00:00",
+      "response": {
+        "trip": {
+          "start_date": "2026-11-09",
+          "end_date": "2026-11-12",
+          "days": 4,
+          "nights": 3
+        },
+        "totals": {
+          "lodging_payable": "600.00",
+          "mie_payable": "296.00",
+          "total_payable": "896.00",
+          "lodging_overage": "0.00",
+          "lodging_actuals_complete": true
+        },
+        "days": [
+          {
+            "date": "2026-11-09",
+            "locality": {
+              "destination_id": 75,
+              "name": "Washington",
+              "county": "District of Columbia"
+            },
+            "rate_source": "gsa",
+            "fiscal_year": 2027,
+            "per_diem_effective_date": "2026-10-01",
+            "mie_breakdown_effective_date": "2026-06-23",
+            "day_type": "first",
+            "mie": {
+              "full_rate": "92.00",
+              "proration_factor": 0.75,
+              "prorated_rate": "69.00",
+              "deducted_meals": [],
+              "meal_deductions": "0.00",
+              "payable": "69.00",
+              "breakdown": {
+                "breakfast": "23.00",
+                "lunch": "26.00",
+                "dinner": "38.00",
+                "incidentals": "5.00"
+              }
+            },
+            "lodging": {
+              "night": true,
+              "cap": "203.00",
+              "actual": "200.00",
+              "payable": "200.00",
+              "overage": "0.00"
+            }
+          },
+          {
+            "date": "2026-11-10",
+            "locality": {
+              "destination_id": 75,
+              "name": "Washington",
+              "county": "District of Columbia"
+            },
+            "rate_source": "gsa",
+            "fiscal_year": 2027,
+            "per_diem_effective_date": "2026-10-01",
+            "mie_breakdown_effective_date": "2026-06-23",
+            "day_type": "full",
+            "mie": {
+              "full_rate": "92.00",
+              "proration_factor": 1.0,
+              "prorated_rate": "92.00",
+              "deducted_meals": [
+                "lunch"
+              ],
+              "meal_deductions": "26.00",
+              "payable": "66.00",
+              "breakdown": {
+                "breakfast": "23.00",
+                "lunch": "26.00",
+                "dinner": "38.00",
+                "incidentals": "5.00"
+              }
+            },
+            "lodging": {
+              "night": true,
+              "cap": "203.00",
+              "actual": "200.00",
+              "payable": "200.00",
+              "overage": "0.00"
+            }
+          },
+          {
+            "date": "2026-11-11",
+            "locality": {
+              "destination_id": 75,
+              "name": "Washington",
+              "county": "District of Columbia"
+            },
+            "rate_source": "gsa",
+            "fiscal_year": 2027,
+            "per_diem_effective_date": "2026-10-01",
+            "mie_breakdown_effective_date": "2026-06-23",
+            "day_type": "full",
+            "mie": {
+              "full_rate": "92.00",
+              "proration_factor": 1.0,
+              "prorated_rate": "92.00",
+              "deducted_meals": [],
+              "meal_deductions": "0.00",
+              "payable": "92.00",
+              "breakdown": {
+                "breakfast": "23.00",
+                "lunch": "26.00",
+                "dinner": "38.00",
+                "incidentals": "5.00"
+              }
+            },
+            "lodging": {
+              "night": true,
+              "cap": "203.00",
+              "actual": "200.00",
+              "payable": "200.00",
+              "overage": "0.00"
+            }
+          },
+          {
+            "date": "2026-11-12",
+            "locality": {
+              "destination_id": 75,
+              "name": "Washington",
+              "county": "District of Columbia"
+            },
+            "rate_source": "gsa",
+            "fiscal_year": 2027,
+            "per_diem_effective_date": "2026-10-01",
+            "mie_breakdown_effective_date": "2026-06-23",
+            "day_type": "last",
+            "mie": {
+              "full_rate": "92.00",
+              "proration_factor": 0.75,
+              "prorated_rate": "69.00",
+              "deducted_meals": [],
+              "meal_deductions": "0.00",
+              "payable": "69.00",
+              "breakdown": {
+                "breakfast": "23.00",
+                "lunch": "26.00",
+                "dinner": "38.00",
+                "incidentals": "5.00"
+              }
+            },
+            "lodging": {
+              "night": false
+            }
+          }
+        ],
+        "notes": [],
+        "verification_urls": [
+          {
+            "type": "per_diem",
+            "url": "https://www.gsa.gov/travel/plan-book/per-diem-rates/per-diem-rates-results?action=perdiems_report&fiscal_year=2027",
+            "destination_id": 75,
+            "fiscal_year": 2027
+          },
+          {
+            "type": "mie_breakdown",
+            "url": "https://www.gsa.gov/travel/plan-a-trip/per-diem-rates/mie-breakdowns"
+          }
+        ],
+        "calculation_version": "gsa-trip-v1",
+        "source_fingerprint": "sha256:6392a832dfdb6899ae0782e79f90eaeb422b7f9b019e04d7bda3db800cdcc898",
+        "request_id": "req_63dc1d24a745"
+      },
+      "retrieved_at": "2026-11-03T07:23:39.115097+00:00"
+    },
+    {
+      "scenario_id": "washington-san-diego-review",
+      "travelers": 2,
+      "request": {
+        "stops": [
+          {
+            "location": {
+              "destination_id": 75
+            },
+            "arrival_date": "2026-11-16",
+            "departure_date": "2026-11-18",
+            "lodging_cost_per_night": 200
+          },
+          {
+            "location": {
+              "destination_id": 34
+            },
+            "arrival_date": "2026-11-18",
+            "departure_date": "2026-11-20",
+            "lodging_cost_per_night": 180
+          }
+        ],
+        "verification_url": true
+      },
+      "requested_at": "2026-11-03T07:23:39.115112+00:00",
+      "response": {
+        "trip": {
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-20",
+          "days": 5,
+          "nights": 4
+        },
+        "totals": {
+          "lodging_payable": "760.00",
+          "mie_payable": "397.50",
+          "total_payable": "1157.50",
+          "lodging_overage": "0.00",
+          "lodging_actuals_complete": true
+        },
+        "days": [
+          {
+            "date": "2026-11-16",
+            "locality": {
+              "destination_id": 75,
+              "name": "Washington",
+              "county": "District of Columbia"
+            },
+            "rate_source": "gsa",
+            "fiscal_year": 2027,
+            "per_diem_effective_date": "2026-10-01",
+            "mie_breakdown_effective_date": "2026-06-23",
+            "day_type": "first",
+            "mie": {
+              "full_rate": "92.00",
+              "proration_factor": 0.75,
+              "prorated_rate": "69.00",
+              "deducted_meals": [],
+              "meal_deductions": "0.00",
+              "payable": "69.00",
+              "breakdown": {
+                "breakfast": "23.00",
+                "lunch": "26.00",
+                "dinner": "38.00",
+                "incidentals": "5.00"
+              }
+            },
+            "lodging": {
+              "night": true,
+              "cap": "203.00",
+              "actual": "200.00",
+              "payable": "200.00",
+              "overage": "0.00"
+            }
+          },
+          {
+            "date": "2026-11-17",
+            "locality": {
+              "destination_id": 75,
+              "name": "Washington",
+              "county": "District of Columbia"
+            },
+            "rate_source": "gsa",
+            "fiscal_year": 2027,
+            "per_diem_effective_date": "2026-10-01",
+            "mie_breakdown_effective_date": "2026-06-23",
+            "day_type": "full",
+            "mie": {
+              "full_rate": "92.00",
+              "proration_factor": 1.0,
+              "prorated_rate": "92.00",
+              "deducted_meals": [],
+              "meal_deductions": "0.00",
+              "payable": "92.00",
+              "breakdown": {
+                "breakfast": "23.00",
+                "lunch": "26.00",
+                "dinner": "38.00",
+                "incidentals": "5.00"
+              }
+            },
+            "lodging": {
+              "night": true,
+              "cap": "203.00",
+              "actual": "200.00",
+              "payable": "200.00",
+              "overage": "0.00"
+            }
+          },
+          {
+            "date": "2026-11-18",
+            "locality": {
+              "destination_id": 34,
+              "name": "San Diego",
+              "county": "San Diego"
+            },
+            "rate_source": "gsa",
+            "fiscal_year": 2027,
+            "per_diem_effective_date": "2026-10-01",
+            "mie_breakdown_effective_date": "2026-06-23",
+            "day_type": "full",
+            "mie": {
+              "full_rate": "86.00",
+              "proration_factor": 1.0,
+              "prorated_rate": "86.00",
+              "deducted_meals": [],
+              "meal_deductions": "0.00",
+              "payable": "86.00",
+              "breakdown": {
+                "breakfast": "22.00",
+                "lunch": "23.00",
+                "dinner": "36.00",
+                "incidentals": "5.00"
+              }
+            },
+            "lodging": {
+              "night": true,
+              "cap": "208.00",
+              "actual": "180.00",
+              "payable": "180.00",
+              "overage": "0.00"
+            }
+          },
+          {
+            "date": "2026-11-19",
+            "locality": {
+              "destination_id": 34,
+              "name": "San Diego",
+              "county": "San Diego"
+            },
+            "rate_source": "gsa",
+            "fiscal_year": 2027,
+            "per_diem_effective_date": "2026-10-01",
+            "mie_breakdown_effective_date": "2026-06-23",
+            "day_type": "full",
+            "mie": {
+              "full_rate": "86.00",
+              "proration_factor": 1.0,
+              "prorated_rate": "86.00",
+              "deducted_meals": [],
+              "meal_deductions": "0.00",
+              "payable": "86.00",
+              "breakdown": {
+                "breakfast": "22.00",
+                "lunch": "23.00",
+                "dinner": "36.00",
+                "incidentals": "5.00"
+              }
+            },
+            "lodging": {
+              "night": true,
+              "cap": "208.00",
+              "actual": "180.00",
+              "payable": "180.00",
+              "overage": "0.00"
+            }
+          },
+          {
+            "date": "2026-11-20",
+            "locality": {
+              "destination_id": 34,
+              "name": "San Diego",
+              "county": "San Diego"
+            },
+            "rate_source": "gsa",
+            "fiscal_year": 2027,
+            "per_diem_effective_date": "2026-10-01",
+            "mie_breakdown_effective_date": "2026-06-23",
+            "day_type": "last",
+            "mie": {
+              "full_rate": "86.00",
+              "proration_factor": 0.75,
+              "prorated_rate": "64.50",
+              "deducted_meals": [],
+              "meal_deductions": "0.00",
+              "payable": "64.50",
+              "breakdown": {
+                "breakfast": "22.00",
+                "lunch": "23.00",
+                "dinner": "36.00",
+                "incidentals": "5.00"
+              }
+            },
+            "lodging": {
+              "night": false
+            }
+          }
+        ],
+        "notes": [],
+        "verification_urls": [
+          {
+            "type": "per_diem",
+            "url": "https://www.gsa.gov/travel/plan-book/per-diem-rates/per-diem-rates-results?action=perdiems_report&fiscal_year=2027",
+            "destination_id": 34,
+            "fiscal_year": 2027
+          },
+          {
+            "type": "per_diem",
+            "url": "https://www.gsa.gov/travel/plan-book/per-diem-rates/per-diem-rates-results?action=perdiems_report&fiscal_year=2027",
+            "destination_id": 75,
+            "fiscal_year": 2027
+          },
+          {
+            "type": "mie_breakdown",
+            "url": "https://www.gsa.gov/travel/plan-a-trip/per-diem-rates/mie-breakdowns"
+          }
+        ],
+        "calculation_version": "gsa-trip-v1",
+        "source_fingerprint": "sha256:99742928739404e43b6434b947f18779be0b2a0b8ed5da60d5ed52af88eccdde",
+        "request_id": "req_8499dc13b17d"
+      },
+      "retrieved_at": "2026-11-03T07:23:39.127417+00:00"
+    }
+  ]
+}

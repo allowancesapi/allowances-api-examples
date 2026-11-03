@@ -1,0 +1,190 @@
+{
+  "proposal": "Illustrative missing lodging scenario",
+  "endpoint": "http://127.0.0.1:32768/v1/gsa/calc/perdiem/trip",
+  "status": "incomplete",
+  "scenarios": [
+    {
+      "scenario_id": "san-diego-caps-only",
+      "travelers": 2,
+      "request": {
+        "stops": [
+          {
+            "location": {
+              "destination_id": 34
+            },
+            "arrival_date": "2026-11-09",
+            "departure_date": "2026-11-12"
+          }
+        ],
+        "verification_url": true
+      },
+      "requested_at": "2026-11-03T07:23:39.182992+00:00",
+      "response": {
+        "trip": {
+          "start_date": "2026-11-09",
+          "end_date": "2026-11-12",
+          "days": 4,
+          "nights": 3
+        },
+        "totals": {
+          "lodging_payable": null,
+          "mie_payable": "301.00",
+          "total_payable": null,
+          "lodging_overage": null,
+          "lodging_actuals_complete": false
+        },
+        "days": [
+          {
+            "date": "2026-11-09",
+            "locality": {
+              "destination_id": 34,
+              "name": "San Diego",
+              "county": "San Diego"
+            },
+            "rate_source": "gsa",
+            "fiscal_year": 2027,
+            "per_diem_effective_date": "2026-10-01",
+            "mie_breakdown_effective_date": "2026-06-23",
+            "day_type": "first",
+            "mie": {
+              "full_rate": "86.00",
+              "proration_factor": 0.75,
+              "prorated_rate": "64.50",
+              "deducted_meals": [],
+              "meal_deductions": "0.00",
+              "payable": "64.50",
+              "breakdown": {
+                "breakfast": "22.00",
+                "lunch": "23.00",
+                "dinner": "36.00",
+                "incidentals": "5.00"
+              }
+            },
+            "lodging": {
+              "night": true,
+              "cap": "208.00",
+              "actual": null,
+              "payable": null,
+              "overage": null
+            }
+          },
+          {
+            "date": "2026-11-10",
+            "locality": {
+              "destination_id": 34,
+              "name": "San Diego",
+              "county": "San Diego"
+            },
+            "rate_source": "gsa",
+            "fiscal_year": 2027,
+            "per_diem_effective_date": "2026-10-01",
+            "mie_breakdown_effective_date": "2026-06-23",
+            "day_type": "full",
+            "mie": {
+              "full_rate": "86.00",
+              "proration_factor": 1.0,
+              "prorated_rate": "86.00",
+              "deducted_meals": [],
+              "meal_deductions": "0.00",
+              "payable": "86.00",
+              "breakdown": {
+                "breakfast": "22.00",
+                "lunch": "23.00",
+                "dinner": "36.00",
+                "incidentals": "5.00"
+              }
+            },
+            "lodging": {
+              "night": true,
+              "cap": "208.00",
+              "actual": null,
+              "payable": null,
+              "overage": null
+            }
+          },
+          {
+            "date": "2026-11-11",
+            "locality": {
+              "destination_id": 34,
+              "name": "San Diego",
+              "county": "San Diego"
+            },
+            "rate_source": "gsa",
+            "fiscal_year": 2027,
+            "per_diem_effective_date": "2026-10-01",
+            "mie_breakdown_effective_date": "2026-06-23",
+            "day_type": "full",
+            "mie": {
+              "full_rate": "86.00",
+              "proration_factor": 1.0,
+              "prorated_rate": "86.00",
+              "deducted_meals": [],
+              "meal_deductions": "0.00",
+              "payable": "86.00",
+              "breakdown": {
+                "breakfast": "22.00",
+                "lunch": "23.00",
+                "dinner": "36.00",
+                "incidentals": "5.00"
+              }
+            },
+            "lodging": {
+              "night": true,
+              "cap": "208.00",
+              "actual": null,
+              "payable": null,
+              "overage": null
+            }
+          },
+          {
+            "date": "2026-11-12",
+            "locality": {
+              "destination_id": 34,
+              "name": "San Diego",
+              "county": "San Diego"
+            },
+            "rate_source": "gsa",
+            "fiscal_year": 2027,
+            "per_diem_effective_date": "2026-10-01",
+            "mie_breakdown_effective_date": "2026-06-23",
+            "day_type": "last",
+            "mie": {
+              "full_rate": "86.00",
+              "proration_factor": 0.75,
+              "prorated_rate": "64.50",
+              "deducted_meals": [],
+              "meal_deductions": "0.00",
+              "payable": "64.50",
+              "breakdown": {
+                "breakfast": "22.00",
+                "lunch": "23.00",
+                "dinner": "36.00",
+                "incidentals": "5.00"
+              }
+            },
+            "lodging": {
+              "night": false
+            }
+          }
+        ],
+        "notes": [],
+        "verification_urls": [
+          {
+            "type": "per_diem",
+            "url": "https://www.gsa.gov/travel/plan-book/per-diem-rates/per-diem-rates-results?action=perdiems_report&fiscal_year=2027",
+            "destination_id": 34,
+            "fiscal_year": 2027
+          },
+          {
+            "type": "mie_breakdown",
+            "url": "https://www.gsa.gov/travel/plan-a-trip/per-diem-rates/mie-breakdowns"
+          }
+        ],
+        "calculation_version": "gsa-trip-v1",
+        "source_fingerprint": "sha256:d17d57c8b6b5a5213f1d122ef81e9734c4a514c782ec7aaf38022b6a4caa6018",
+        "request_id": "req_07663a6f3e3e"
+      },
+      "retrieved_at": "2026-11-03T07:23:39.199317+00:00"
+    }
+  ]
+}

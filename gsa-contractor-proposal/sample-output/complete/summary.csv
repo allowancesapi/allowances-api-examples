@@ -1,0 +1,3 @@
+scenario_id,travelers,status,start_date,end_date,days,nights,per_traveler_lodging_payable,group_lodging_payable,per_traveler_mie_payable,group_mie_payable,per_traveler_total_payable,group_total_payable,per_traveler_lodging_overage,group_lodging_overage
+washington-site-visit,3,complete,2026-11-09,2026-11-12,4,3,600.00,1800.00,296.00,888.00,896.00,2688.00,0.00,0.00
+washington-san-diego-review,2,complete,2026-11-16,2026-11-20,5,4,760.00,1520.00,397.50,795.00,1157.50,2315.00,0.00,0.00
